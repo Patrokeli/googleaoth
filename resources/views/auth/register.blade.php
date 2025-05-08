@@ -49,4 +49,24 @@
             </x-primary-button>
         </div>
     </form>
+     <!-- Divider and Google Login -->
+<div class="mt-6 space-y-4">
+    <!-- OR Divider -->
+    <div class="flex justify-center">
+        <hr class="flex-grow border-gray-300">
+        <span class="mx-3 text-sm text-gray-500">or</span>
+        <hr class="flex-grow border-gray-300">
+    </div>
+
+    <!-- Google Login Button (Centered) -->
+    <div class="flex justify-center">
+        <a href="{{ route('auth.google') }}"
+           class="inline-flex items-center gap-2 bg-white text-gray-700 border border-gray-300 rounded px-4 py-2 shadow hover:bg-gray-100">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" alt="Google">
+            <span>Register with Google</span>
+        </a>
+    </div>
+</div>
+
+
 </x-guest-layout>
